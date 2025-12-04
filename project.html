@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CDNS -->
+     <!-- Bootstrap-css-cdn -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <!-- Bootstrap-css-cdn -->
+     <!-- Font-Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Font-awesome -->
+     <!-- Fade_aos-css -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- Fade_aos-css -->
+    <!-- ✔ Guaranteed Working Bootstrap Icons CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- CDNS -->
+    <!-- CSS-LINKS -->
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="about.css">
+      <link rel="stylesheet" href="service.css">
+      <link rel="stylesheet" href="resume.css">
+      <link rel="stylesheet" href="projects.css">
+      <link rel="stylesheet" href="pricing.css">
+      <link rel="stylesheet" href="contacts.css">
+      <link rel="stylesheet" href="footer.css">
+    <!-- CSS-LINKS -->
+    <!-- Email.Js-CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "cA8u22D9--APh9-2h",
+      });
+   })();
+</script>
+    <!-- Email.Js.CDN -->
+    <!-- CDNS -->
+    <title>Pricing</title>
+    <style>
+
+
+#navbar{
+    background: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+#navbar.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+    </style>
+
+</head>
+<body>
+    
+<section>
+    <!-- Container-Section -->
+     <!-- Navbar -->
+<section>
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+  <a class="navbar-brand" href="index.html">
+    <img id="my-logo" src="my-logo-usman-dev.jpeg" alt="" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      <!-- Toggle -->
+<label class="hamburger" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+  <input type="checkbox" />
+  <svg viewBox="0 0 32 32">
+    <path
+      d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+      class="line line-top-bottom"
+    ></path>
+    <path d="M7 16 27 16" class="line"></path>
+  </svg>
+</label>
+
+      <!-- Toggle -->
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-danger" style="background-color: rgba(198, 66, 66, 0.217); border-radius: 4px; height: 40px;" id="a-tag-line" href="index.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="about.html" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="service.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="resume.html" data-aos="fade-dowm" data-aos-easing="linear" data-aos-duration="800">Resume</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="project.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Projects</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="pricing.html" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="contact.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Contact</a>
+      </li>
+    </ul>
+    <div class="d-flex">  
+      <!-- Navbar-Icons -->
+     <!-- linkedin-icon -->
+       <button id="nav-icons" class="mr-2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+        onclick="window.open('https://www.linkedin.com/in/m-usman-chauhan/')">
+       <i class="fa-brands fa-linkedin-in" id="linkedin-icon"></i>
+       </button>
+
+        <!-- linkedin-icon -->
+        <!-- github-icon -->
+        <button id="nav-icons" class="mr-2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+        onclick="window.open('https://github.com/MUsmanandDeveloper19')">
+       <i class="fa-brands fa-github" id="github-icon"></i> 
+       </button>
+        <!-- github-icon -->
+        <!-- whatsapp-icon -->
+          <button id="nav-icons" class="mr-2"
+          data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+          onclick="window.open('https://wa.me/923061664480?text=Hello%20I%20saw%20your%20portfolio!', '_blank')">
+         <i class="fa-brands fa-whatsapp" id="whatsapp-icon"></i>
+         </button>
+
+        <!-- whatsapp-icon -->
+        <!-- youtube-icon -->
+        <button id="nav-icons" class="mr-2" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500"
+        onclick="window.open('https://www.upwork.com/freelancers/~01b28b7c8bcfa1d2cb')">
+          <i class="fa-brands fa-upwork" id="youtube-icon"></i>
+        </button>
+        
+      <!-- youtube-icon -->
+      <!-- Navbar-icons -->
+    </div>
+  </div>
+</nav>
+</section>
+<!-- Navbar -->
+
+
+<section id="Tittles">
+    <div class="container mt-5 text-center">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 col-sm-12">
+            <h5 id="Latest-Project" class="text-danger" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">Latest Projects</h5>
+            <h3 id="Latest-Project-headline" class="text-white mt-3">Crafting Your Ideas into Exceptional Digital Solutions</h3>
+            <h6 id="Latest-Project-description" class="text-white mt-3" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+                Business consulting provides expert guidance to help<br>
+                companies improve performance, optimize operations,<br>
+                and achieve sustainable growth.
+            </h6>
+        </div>
+    </div>
+</div>
+</section>
+
+<section>
+
+    <!-- Projects -->
+
+   <div class="container">
+    <div class="row d-flex mt-5">
+        <div class="col-lg-4 col-md-8 col-sm-12 text-white mt-3">
+
+          <!-- Project-1 -->
+                    <div class="custom-card" data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <img style="width: 100%;" src="Project-img-1.png" alt="Project">
+
+          <div class="content">
+            <p class="title">Here is the <span>Insurance Lady</span></p>
+
+            <!-- View-button -->
+               <a href="https://hereistheinsurancelady.com/" id="a-text-degotation">
+                <button class="btn btn-outline-white text-white">View</button>
+               </a>
+            <!-- View-button -->
+
+          </div>
+        </div>
+          <!-- Project-1 -->
+           
+        </div>
+        <div class="col-lg-4 col-md-8 col-sm-12 text-danger mt-3">
+
+        <!-- Project-2 -->
+         <div class="custom-card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <img style="width: 100%;" src="Project-img-4.png" alt="Project">
+
+          <div class="content">
+            <p class="title">beautflo <span>Posmetics Products</span></p>
+
+            <!-- View-button -->
+               <a href="https://www.beautflo.com/" id="a-text-degotation">
+                <button class="btn btn-outline-white text-white">View</button>
+               </a>
+            <!-- View-button -->
+
+          </div>
+        </div>
+          <!-- Project-2 -->
+
+        </div>
+        <div class="col-lg-4 col-md-8 col-sm-12 text-info mt-3">
+
+        <!-- Project-3 -->
+         <div class="custom-card" data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <img style="width: 100%;" src="Project-img-3.png" alt="Project">
+
+          <div class="content">
+            <p class="title">Lockly <span>Enjoy the freedom</span></p>
+
+            <!-- View-button -->
+               <a href="https://lockly.com/" id="a-text-degotation">
+                <button class="btn btn-outline-white text-white">View</button>
+               </a>
+            <!-- View-button -->
+
+          </div>
+        </div>
+          <!-- Project-3 -->
+
+        </div>
+    </div>
+</div>
+
+
+    <div class="container">
+
+        <div class="row d-flex mt-3">
+        <div class="col-lg-4 col-md-8 col-sm-12 text-white mt-3">
+
+          <!-- Project-4 -->
+                    <div class="custom-card" data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <img style="width: 100%;" src="Project-img-9.png" alt="Project">
+
+          <div class="content">
+            <p class="title">Football <span>World Cup Event</span></p>
+
+             <!-- View-button -->
+               <a href="https://musmananddeveloper19.github.io/football/" id="a-text-degotation">
+                <button class="btn btn-outline-white text-white">View</button>
+               </a>
+            <!-- View-button -->
+
+          </div>
+        </div>
+          <!-- Project-4 -->
+           
+        </div>
+        <div class="col-lg-4 col-md-8 col-sm-12 text-danger mt-3">
+
+        <!-- Project-5 -->
+         <div class="custom-card" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <img style="width: 100%;" src="Project-img-5.png" alt="Project">
+
+          <div class="content">
+            <p class="title">Elena <span>Cleaning services</span></p>
+
+            <!-- View-button -->
+               <a href="https://elenacleaningservices.com/" id="a-text-degotation">
+                <button class="btn btn-outline-white text-white">View</button>
+               </a>
+            <!-- View-button -->
+
+          </div>
+        </div>
+          <!-- Project-5 -->
+
+        </div>
+        <div class="col-lg-4 col-md-8 col-sm-12 text-info mt-3">
+
+        <!-- Project-6 -->
+         <div class="custom-card" data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <img style="width: 100%;" src="Project-img-7.png" alt="Project">
+
+          <div class="content">
+            <p class="title">Syntech <span>Digital Assesories</span></p>
+     
+            <!-- View-button -->
+               <a href="https://syntechhome.com/" id="a-text-degotation">
+                <button class="btn btn-outline-white text-white">View</button>
+               </a>
+            <!-- View-button -->
+
+          </div>
+        </div>
+          <!-- Project-6 -->
+
+        </div>
+    </div>
+
+    </div>
+
+
+       <div class="container">
+    <div class="row d-flex mt-5">
+        <div class="col-lg-4 col-md-8 col-sm-12 text-white mt-3">
+
+          <!-- Project-7 -->
+                    <div class="custom-card" data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <img style="width: 100%;" src="Project-img-2.png" alt="Project">
+
+          <div class="content">
+            <p class="title">Adlooper<span>Marketing Agency</span></p>
+          
+            <!-- View-button -->
+               <a href="https://musmananddeveloper19.github.io/The-Adlooper-Project/index.html" id="a-text-degotation">
+                <button class="btn btn-outline-white text-white">View</button>
+               </a>
+            <!-- View-button -->
+
+          </div>
+        </div>
+          <!-- Project-7 -->
+           
+        </div>
+        <div class="col-lg-4 col-md-8 col-sm-12 text-danger mt-3">
+
+        <!-- Project-8 -->
+         <div class="custom-card" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <img style="width: 100%;" src="Project-img-10.png" alt="Project">
+
+          <div class="content">
+            <p class="title">Ever Green<span>Casting Future Perfection</span></p>
+
+              <!-- View-button -->
+               <a href="https://qd-evergreen.com/en/" id="a-text-degotation">
+                <button class="btn btn-outline-white text-white">View</button>
+               </a>
+            <!-- View-button -->
+
+          </div>
+        </div>
+          <!-- Project-8 -->
+
+        </div>
+        <div class="col-lg-4 col-md-8 col-sm-12 text-info mt-3">
+
+        <!-- Project-9 -->
+         <div class="custom-card" data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <img style="width: 100%;" src="Project-img-6.png" alt="Project">
+
+          <div class="content">
+            <p class="title">Sports Life <span>fitness</span></p>
+
+            <!-- View-button -->
+               <a href="https://musmananddeveloper19.github.io/Gym-project/#" id="a-text-degotation">
+                <button class="btn btn-outline-white text-white">View</button>
+               </a>
+            <!-- View-button -->
+
+          </div>
+        </div>
+          <!-- Project-9 -->
+
+        </div>
+    </div>
+</div>
+
+
+    <!-- Projects -->
+
+</section>
+
+
+
+ <footer class="mt-5">
+  <div class="container">
+    <div class="footer-box p-4 mt-5">
+
+      <div class="row">
+
+        <!-- Left Side -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+          <h1 class="text-white footer-heading" data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+            Your Vision, My Code — Let’s Create Great.
+          </h1>
+
+          <!-- Email -->
+          <div class="footer-info d-flex mt-4">
+            <div class="footer-icon">
+              <i class="fa-solid fa-envelope" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"></i>
+            </div>
+            <div class="ms-3">
+              <h5 class="footer-info-title ml-2">Email:</h5>
+              <a href="mailto:musmanchauhan191@gmail.com" class="footer-info-link ml-2" style="position: relative; top: -10px;">
+                musmanchauhan191@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="footer-info d-flex mt-4">
+            <div class="footer-icon">
+              <i class="fa-solid fa-location-dot" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500"></i>
+            </div>
+            <div class="ms-3">
+              <h5 class="footer-info-title ml-2">Location:</h5>
+              <a href="#" class="footer-info-link ml-2" style="position: relative; top: -10px;">Lahore, Pakistan</a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="footer-info d-flex mt-4">
+            <div class="footer-icon">
+              <i class="fa-solid fa-phone" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"></i>
+            </div>
+            <div class="ms-3">
+              <h5 class="footer-info-title ml-2">Contact:</h5>
+              <a href="#" class="footer-info-link ml-2" style="position: relative; top: -10px;">+92 306 1664480</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h1 class="text-white text-center mb-3" data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">GET IN TOUCH</h1>
+
+             <div class="row g-3">
+      <div class="col-6 col-sm-12 col-md-6">
+        <input type="text" id="name" class="footer-input" placeholder="Your Name" required data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <input type="email" id="email" class="footer-input" placeholder="Your Email" required data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+      </div>
+
+      <div class="col-6 col-sm-12 col-md-6">
+        <input type="text" id="phone" class="footer-input" placeholder="Phone Number" data-aos="fade-up fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <input type="text" id="subject" class="footer-input" placeholder="Subject" required data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+      </div>
+
+      <div class="col-12">
+        <textarea id="message" class="footer-textarea" placeholder="Message" required></textarea data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+      </div>
+
+      <div class="col-12 text-center">
+        <button type="button" id="submit-btn" class="btn btn-outline-danger submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+const _0x3107c2=_0x132a;function _0x132a(_0x30ca76,_0x1b87ad){const _0x190390=_0x1903();return _0x132a=function(_0x132a5c,_0x39bb85){_0x132a5c=_0x132a5c-0x108;let _0x4408d0=_0x190390[_0x132a5c];return _0x4408d0;},_0x132a(_0x30ca76,_0x1b87ad);}(function(_0x53ea2e,_0x25abb1){const _0xdfe818=_0x132a,_0xba7d3a=_0x53ea2e();while(!![]){try{const _0x5caa5c=parseInt(_0xdfe818(0x109))/0x1*(-parseInt(_0xdfe818(0x118))/0x2)+-parseInt(_0xdfe818(0x10c))/0x3*(parseInt(_0xdfe818(0x117))/0x4)+-parseInt(_0xdfe818(0x120))/0x5+-parseInt(_0xdfe818(0x11e))/0x6+parseInt(_0xdfe818(0x11f))/0x7*(-parseInt(_0xdfe818(0x11a))/0x8)+parseInt(_0xdfe818(0x115))/0x9*(-parseInt(_0xdfe818(0x119))/0xa)+parseInt(_0xdfe818(0x112))/0xb*(parseInt(_0xdfe818(0x11b))/0xc);if(_0x5caa5c===_0x25abb1)break;else _0xba7d3a['push'](_0xba7d3a['shift']());}catch(_0x365fd4){_0xba7d3a['push'](_0xba7d3a['shift']());}}}(_0x1903,0x2d8a3),emailjs['init'](_0x3107c2(0x10e)));function _0x1903(){const _0xdbf20d=['then','name','22OEAEet','send','phone','3164733bjBbxR','value','12zAPEFy','2FbByqN','10OfuvQM','1462312iOUeEY','8380644xyejud','preventDefault','Email\x20sent\x20successfully!','704460ObBtiw','7tEdEaY','629945wPPMFo','Email\x20not\x20sent!!\x20Error:\x20','addEventListener','348463fdQSNs','email','getElementById','83955gPpcns','template_1ywblxq','cA8u22D9--APh9-2h','subject'];_0x1903=function(){return _0xdbf20d;};return _0x1903();}function sendEmail(){const _0x596ada=_0x3107c2,_0x4af22d={'name':document[_0x596ada(0x10b)](_0x596ada(0x111))[_0x596ada(0x116)],'email':document[_0x596ada(0x10b)](_0x596ada(0x10a))[_0x596ada(0x116)],'phone':document[_0x596ada(0x10b)](_0x596ada(0x114))[_0x596ada(0x116)],'subject':document[_0x596ada(0x10b)](_0x596ada(0x10f))['value'],'message':document[_0x596ada(0x10b)]('message')[_0x596ada(0x116)]};emailjs[_0x596ada(0x113)]('service_f70we8d',_0x596ada(0x10d),_0x4af22d)[_0x596ada(0x110)](()=>alert(_0x596ada(0x11d)))['catch'](_0x5a4795=>alert(_0x596ada(0x121)+_0x5a4795));}document[_0x3107c2(0x10b)]('submit-btn')[_0x3107c2(0x108)]('click',function(_0x358a16){const _0x1ca806=_0x3107c2;_0x358a16[_0x1ca806(0x11c)](),sendEmail();});
+  </script>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- script-js-files -->
+ <script src="index.js"></script>
+<!-- script-js-files -->
+
+
+<!-- CDNS-JS -->
+
+<!-- Fade_aos-Js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+<!-- Fade_aos-Js -->
+
+<!-- Bootstrap-jS-cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+ <!-- Bootstrap-jS-cdn -->
+<!-- CDNS-JS -->
+
+</body>
+</html>

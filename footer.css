@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Outer Footer Box */
+.footer-box {
+  width: 100%;
+  border: 8px solid rgb(35, 1, 1);
+  border-radius: 12px;
+  transition: .4s;
+  background: #121111;
+}
+
+.footer-box:hover {
+  transform: scale(1.04);
+  border-color: rgb(48, 3, 3);
+}
+
+/* Heading */
+.footer-heading {
+  font-size: 42px;
+  line-height: 55px;
+}
+
+/* Icons Circle */
+.footer-icon {
+  width: 48px;
+  height: 48px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: ring 2s infinite alternate;
+}
+
+.footer-icon i {
+  color: white;
+  font-size: 22px;
+}
+
+/* Icon Animation */
+@keyframes ring {
+  from { box-shadow: 0 0 4px red; }
+  to   { box-shadow: 0 0 10px black; }
+}
+
+/* Info Text */
+.footer-info-title {
+  color: #aaa;
+  font-size: 16px;
+}
+
+.footer-info-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Inputs */
+.footer-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: black;
+  color: white;
+  box-shadow: inset 2px 5px 10px rgb(63, 61, 61);
+}
+
+.footer-input:focus {
+  transform: scale(1.05);
+  border-color: red;
+  box-shadow: 0 0 15px red;
+}
+
+/* Message */
+.footer-textarea {
+  width: 100%;
+  height: 120px;
+  margin-top: 20px;
+  background: black;
+  border-radius: 8px;
+  color: white;
+  padding: 12px;
+  border: 1px solid #444;
+  box-shadow: inset 2px 5px 10px rgb(63, 61, 61);
+}
+
+.footer-textarea:focus {
+  transform: scale(1.03);
+  border-color: red;
+}
+
+/* Button */
+.submit-btn {
+  padding: 10px 0px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+#submit-btn{
+  height: 40px;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 992px) {
+  .footer-heading { font-size: 34px; }
+}
+
+@media (max-width: 768px) {
+  .footer-heading { font-size: 28px; }
+  .footer-icon { width: 40px; height: 40px; }
+  .footer-icon i { font-size: 18px; }
+}
+
+@media (max-width: 576px) {
+  .footer-heading { font-size: 24px; line-height: 32px; }
+  .footer-icon { width: 32px; height: 32px; }
+  .footer-icon i { font-size: 16px; }
+}

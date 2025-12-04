@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pricing-card {
+  width: 100%;
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 transparent;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(255, 0, 0, 0.2);
+  border-color: red;
+}
+
+.highlight {
+  border: 1px solid red;
+  background: rgba(255, 0, 0, 0.08);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.2);
+}
+
+.plan-title {
+  font-size: 26px;
+}
+
+.plan-category {
+  font-size: 15px;
+  color: #ccc;
+}
+
+.plan-price {
+  font-size: 22px;
+  color: #ff3b3b;
+  font-weight: bold;
+}
+
+.plan-desc {
+  font-size: 13px;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+.delivery-box {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icon-sm {
+  width: 18px;
+  height: 18px;
+}
+
+.delivery-text {
+  font-size: 14px;
+  color: #fff;
+}
+
+.include-list {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.include-list li {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+.icon-list {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.btn-continue {
+  height: 30px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 2px;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.3);
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-continue:hover {
+  background-color: red;
+}

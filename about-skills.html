@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stats Section</title>
+
+<style>
+
+    .stats-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .stat-card {
+        background: #111;
+        padding: 40px 20px;
+        border-radius: 20px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .stat-number {
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .stat-text {
+        color: #aaa;
+        font-size: 16px;
+    }
+
+    /* Tablet — 2 columns */
+    @media (max-width: 992px) {
+        .stats-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* Mobile — 1 column */
+    @media (max-width: 576px) {
+        .stats-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .stat-number {
+            font-size: 36px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="stats-container">
+
+    <div class="stat-card">
+        <div class="stat-number" data-target="50">0</div>
+        <div class="stat-text">Completed Projects</div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-number" data-target="30">0</div>
+        <div class="stat-text">Satisfied Clients</div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-text">Years Experience</div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-number" data-target="10">0</div>
+        <div class="stat-text">MERN Applications</div>
+    </div>
+
+</div>
+
+
+<script>
+    // NUMBER COUNT ANIMATION
+    const counters = document.querySelectorAll(".stat-number");
+
+    const startCount = (entry) => {
+        const target = +entry.target.getAttribute("data-target");
+        let count = 0;
+        const speed = 40; // animation speed
+
+        const updateCount = () => {
+            if (count < target) {
+                count++;
+                entry.target.textContent = count;
+                requestAnimationFrame(updateCount);
+            } else {
+                entry.target.textContent = target + "+";
+            }
+        };
+
+        updateCount();
+    };
+
+    // IntersectionObserver for start when visible
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting && !entry.target.classList.contains("counted")) {
+                    entry.target.classList.add("counted");
+                    startCount(entry);
+                }
+            });
+        },
+        { threshold: 0.5 }
+    );
+
+    counters.forEach((counter) => observer.observe(counter));
+</script>
+
+</body>
+</html>

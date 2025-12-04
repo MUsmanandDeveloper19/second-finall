@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CDNS -->
+     <!-- Bootstrap-css-cdn -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <!-- Bootstrap-css-cdn -->
+     <!-- Font-Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Font-awesome -->
+     <!-- Fade_aos-css -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- Fade_aos-css -->
+    <!-- ✔ Guaranteed Working Bootstrap Icons CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- CDNS -->
+    <!-- CSS-LINKS -->
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="about.css">
+      <link rel="stylesheet" href="service.css">
+      <link rel="stylesheet" href="resume.css">
+      <link rel="stylesheet" href="pricing.css">
+      <link rel="stylesheet" href="contacts.css">
+      <link rel="stylesheet" href="footer.css">
+    <!-- CSS-LINKS -->
+    <!-- Email.Js-CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "cA8u22D9--APh9-2h",
+      });
+   })();
+</script>
+    <!-- Email.Js.CDN -->
+    <!-- CDNS -->
+    <title>Service</title>
+    <style>
+
+    /* Service-Page */
+      .service-details-container{
+        margin-top: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #service-nav-pages-home{
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+      }
+      #service-nav-services-service{
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        margin-left: 5px;
+      }
+
+      .service-img-category{
+        width: 100%;
+        height: auto;
+        border: 1px solid;
+        border-radius: 12px;
+      }
+
+      .Service-Category{
+        width: 100%;
+        height: 410px;
+        border: 1px solid #141414;
+        border-radius: 12px;
+        background-color: #1a1919;
+        transition: 0.3s ease;
+        box-shadow: 0 0 0 rgba(0,0,0,0); /* default no shadow */
+      }
+      
+      .service-category{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .service-category-dot{
+         color: red;
+         font-size: 33px;
+         animation: service-dot-blink 1.5s infinite;
+      }
+      @keyframes service-dot-blink {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+      }
+
+      #a-text{
+          text-decoration: none;
+      }
+
+       #navbar{
+    background: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+#navbar.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+    /* Service-Page */
+
+    </style>
+
+</head>
+<body>
+    
+<section>
+    <!-- Container-Section -->
+     <!-- Navbar -->
+<section>
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+  <a class="navbar-brand" href="index.html">
+    <img id="my-logo" src="my-logo-usman-dev.jpeg" alt="" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      <!-- Toggle -->
+<label class="hamburger" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+  <input type="checkbox" />
+  <svg viewBox="0 0 32 32">
+    <path
+      d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+      class="line line-top-bottom"
+    ></path>
+    <path d="M7 16 27 16" class="line"></path>
+  </svg>
+</label>
+
+      <!-- Toggle -->
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-danger" style="background-color: rgba(198, 66, 66, 0.217); border-radius: 4px; height: 40px;" id="a-tag-line" href="index.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="about.html" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="service.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="resume.html" data-aos="fade-dowm" data-aos-easing="linear" data-aos-duration="800">Resume</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="project.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Projects</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="pricing.html" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="a-tag-line" href="contact.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Contact</a>
+      </li>
+    </ul>
+    <div class="d-flex">  
+      <!-- Navbar-Icons -->
+     <!-- linkedin-icon -->
+       <button id="nav-icons" class="mr-2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+        onclick="window.open('https://www.linkedin.com/in/m-usman-chauhan/')">
+       <i class="fa-brands fa-linkedin-in" id="linkedin-icon"></i>
+       </button>
+
+        <!-- linkedin-icon -->
+        <!-- github-icon -->
+        <button id="nav-icons" class="mr-2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+        onclick="window.open('https://github.com/MUsmanandDeveloper19')">
+       <i class="fa-brands fa-github" id="github-icon"></i> 
+       </button>
+        <!-- github-icon -->
+        <!-- whatsapp-icon -->
+          <button id="nav-icons" class="mr-2"
+          data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
+          onclick="window.open('https://wa.me/923061664480?text=Hello%20I%20saw%20your%20portfolio!', '_blank')">
+         <i class="fa-brands fa-whatsapp" id="whatsapp-icon"></i>
+         </button>
+
+        <!-- whatsapp-icon -->
+        <!-- youtube-icon -->
+        <button id="nav-icons" class="mr-2" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500"
+        onclick="window.open('https://www.upwork.com/freelancers/~01b28b7c8bcfa1d2cb')">
+          <i class="fa-brands fa-upwork" id="youtube-icon"></i>
+        </button>
+        
+      <!-- youtube-icon -->
+      <!-- Navbar-icons -->
+    </div>
+  </div>
+</nav>
+</section>
+<!-- Navbar -->
+
+<!-- Container-Section -->
+<section id="Service">
+  <!-- Serivce-Container -->
+    <div class="container">
+        <div class="text-center">
+            <h1 class="text-white service-details-container" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">Service Details</h1>
+        </div>
+
+       <!-- Service-nav -->
+         <div class="d-flex mt-5 mx-auto justify-content-center ">
+           <!-- Home-Page -->
+            <a href="index.html" style="text-decoration: none;">
+                <h6 id="service-nav-pages-home" data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="1500">Home ></h6>
+            </a>
+           <!-- Service-Page -->
+            <a href="index.html" style="text-decoration: none;">
+                <h6 id="service-nav-services-service" data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">Services Details</h6>
+            </a>
+           <!-- Service-Page -->
+         </div>
+       <!-- Service-nav -->
+
+        <!-- Page-tittle -->
+        <h5 class="text-white ml-2" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500" style="position: relative; top: 50px; font-family: Arial, Helvetica, sans-serif;">Admin Dashboard Development</h5>
+        <!-- Page-tittle -->
+
+       <div class="row mt-5">
+        <div class="col-lg-8 col-md-4 col-sm-12 mt-3">
+            <img class="service-img-category" src="service-detials-thumnail-wrap.png" alt="" data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+            <!-- Service Category -->
+              <div class="Service-Category" data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+                <div class="container mt-3 ml-2">
+                    <!-- Service Category -->
+                    <h4 class="text-white service-category">Service Category <b class="service-category-dot">.</b> </h4>
+                    <!-- Service Category -->
+
+                    <!-- Service-list -->
+                    
+                    <!-- Frontend-development -->
+                    <div class="sercice-list mt-3">
+                     <a href="service-category-frontend.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500">Frontend Development</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                     </a>
+                    </div>
+                    <!-- Frontend-development -->
+
+                   <!-- MernStack-development -->
+                    <div class="sercice-list mt-3">
+                     <a href="service-category-mern-stack.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">Mern Stack Development</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                     </a>
+                    </div>
+                    <!-- MernStack-development -->
+
+                    <!-- Admin-dashboard-develpement -->
+                    <div class="sercice-list mt-3">
+                     <a href="service-category-admin-dashboard.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500">Admin Dashboard</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                     </a>
+                    </div>
+                    <!-- Admin-dashboard-develpement -->
+
+                    <!-- AI-powered-intergration -->
+                     <div class="sercice-list mt-3">
+                     <a href="service-category-AI-powered.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">AI-Powered Intregations</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                     </a>
+                    </div>
+                    <!-- AI-powered-intergration -->
+
+                     <!-- Customer Web Solutions -->
+                    <div class="sercice-list mt-3">
+                      <a href="service-category-Customer-web-solution.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500">Customer Web Solutions</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                      </a>
+                    </div>
+                    <!-- Customer Web Solutions -->
+
+                     <!-- API Dev Integration -->
+                     <div class="sercice-list mt-3">
+                      <a href="service-category-Api-dev-integrations.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">API Dev Integration</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                      </a>
+                    </div>
+                    <!-- API Dev Integration -->
+
+                    <!-- Website Redesign -->
+                    <div class="sercice-list mt-3">
+                      <a href="service-category-website-redesign.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500">Website Redesign</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                      </a>
+                    </div>
+                    <!-- Website Redesign -->
+
+                    <!-- Performance Optimization -->
+                     <div class="sercice-list mt-3">
+                      <a href="service-category-performance-optimization.html" id="a-text">
+                        <div class="row d-flex service-list-row">
+                        <div class="col-8 text-white" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">Performance Optimization</div>
+                        <div class="col-2 text-danger">></div>
+                       </div>
+                      </a>
+                    </div>
+                    <!-- Performance Optimization -->
+
+
+                    <!-- Service-list -->
+
+                </div>
+              </div>
+            <!-- Service Category -->
+        </div>
+
+       </div>
+
+    </div>
+  <!-- Serivce-Container -->
+</section>
+
+
+
+
+ <footer class="mt-5">
+  <div class="container">
+    <div class="footer-box p-4 mt-5">
+
+      <div class="row">
+
+        <!-- Left Side -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+          <h1 class="text-white footer-heading" data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+            Your Vision, My Code — Let’s Create Great.
+          </h1>
+
+          <!-- Email -->
+          <div class="footer-info d-flex mt-4">
+            <div class="footer-icon">
+              <i class="fa-solid fa-envelope" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"></i>
+            </div>
+            <div class="ms-3">
+              <h5 class="footer-info-title ml-2">Email:</h5>
+              <a href="mailto:musmanchauhan191@gmail.com" class="footer-info-link ml-2" style="position: relative; top: -10px;">
+                musmanchauhan191@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="footer-info d-flex mt-4">
+            <div class="footer-icon">
+              <i class="fa-solid fa-location-dot" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500"></i>
+            </div>
+            <div class="ms-3">
+              <h5 class="footer-info-title ml-2">Location:</h5>
+              <a href="#" class="footer-info-link ml-2" style="position: relative; top: -10px;">Lahore, Pakistan</a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="footer-info d-flex mt-4">
+            <div class="footer-icon">
+              <i class="fa-solid fa-phone" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"></i>
+            </div>
+            <div class="ms-3">
+              <h5 class="footer-info-title ml-2">Contact:</h5>
+              <a href="#" class="footer-info-link ml-2" style="position: relative; top: -10px;">+92 306 1664480</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h1 class="text-white text-center mb-3" data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">GET IN TOUCH</h1>
+
+             <div class="row g-3">
+      <div class="col-6 col-sm-12 col-md-6">
+        <input type="text" id="name" class="footer-input" placeholder="Your Name" required data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <input type="email" id="email" class="footer-input" placeholder="Your Email" required data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+      </div>
+
+      <div class="col-6 col-sm-12 col-md-6">
+        <input type="text" id="phone" class="footer-input" placeholder="Phone Number" data-aos="fade-up fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <input type="text" id="subject" class="footer-input" placeholder="Subject" required data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+      </div>
+
+      <div class="col-12">
+        <textarea id="message" class="footer-textarea" placeholder="Message" required></textarea data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+      </div>
+
+      <div class="col-12 text-center">
+        <button type="button" id="submit-btn" class="btn btn-outline-danger submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+const _0x3107c2=_0x132a;function _0x132a(_0x30ca76,_0x1b87ad){const _0x190390=_0x1903();return _0x132a=function(_0x132a5c,_0x39bb85){_0x132a5c=_0x132a5c-0x108;let _0x4408d0=_0x190390[_0x132a5c];return _0x4408d0;},_0x132a(_0x30ca76,_0x1b87ad);}(function(_0x53ea2e,_0x25abb1){const _0xdfe818=_0x132a,_0xba7d3a=_0x53ea2e();while(!![]){try{const _0x5caa5c=parseInt(_0xdfe818(0x109))/0x1*(-parseInt(_0xdfe818(0x118))/0x2)+-parseInt(_0xdfe818(0x10c))/0x3*(parseInt(_0xdfe818(0x117))/0x4)+-parseInt(_0xdfe818(0x120))/0x5+-parseInt(_0xdfe818(0x11e))/0x6+parseInt(_0xdfe818(0x11f))/0x7*(-parseInt(_0xdfe818(0x11a))/0x8)+parseInt(_0xdfe818(0x115))/0x9*(-parseInt(_0xdfe818(0x119))/0xa)+parseInt(_0xdfe818(0x112))/0xb*(parseInt(_0xdfe818(0x11b))/0xc);if(_0x5caa5c===_0x25abb1)break;else _0xba7d3a['push'](_0xba7d3a['shift']());}catch(_0x365fd4){_0xba7d3a['push'](_0xba7d3a['shift']());}}}(_0x1903,0x2d8a3),emailjs['init'](_0x3107c2(0x10e)));function _0x1903(){const _0xdbf20d=['then','name','22OEAEet','send','phone','3164733bjBbxR','value','12zAPEFy','2FbByqN','10OfuvQM','1462312iOUeEY','8380644xyejud','preventDefault','Email\x20sent\x20successfully!','704460ObBtiw','7tEdEaY','629945wPPMFo','Email\x20not\x20sent!!\x20Error:\x20','addEventListener','348463fdQSNs','email','getElementById','83955gPpcns','template_1ywblxq','cA8u22D9--APh9-2h','subject'];_0x1903=function(){return _0xdbf20d;};return _0x1903();}function sendEmail(){const _0x596ada=_0x3107c2,_0x4af22d={'name':document[_0x596ada(0x10b)](_0x596ada(0x111))[_0x596ada(0x116)],'email':document[_0x596ada(0x10b)](_0x596ada(0x10a))[_0x596ada(0x116)],'phone':document[_0x596ada(0x10b)](_0x596ada(0x114))[_0x596ada(0x116)],'subject':document[_0x596ada(0x10b)](_0x596ada(0x10f))['value'],'message':document[_0x596ada(0x10b)]('message')[_0x596ada(0x116)]};emailjs[_0x596ada(0x113)]('service_f70we8d',_0x596ada(0x10d),_0x4af22d)[_0x596ada(0x110)](()=>alert(_0x596ada(0x11d)))['catch'](_0x5a4795=>alert(_0x596ada(0x121)+_0x5a4795));}document[_0x3107c2(0x10b)]('submit-btn')[_0x3107c2(0x108)]('click',function(_0x358a16){const _0x1ca806=_0x3107c2;_0x358a16[_0x1ca806(0x11c)](),sendEmail();});
+  </script>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- script-js-files -->
+ <script src="index.js"></script>
+<!-- script-js-files -->
+
+
+<!-- CDNS-JS -->
+
+<!-- Fade_aos-Js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+<!-- Fade_aos-Js -->
+
+<!-- Bootstrap-jS-cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+ <!-- Bootstrap-jS-cdn -->
+<!-- CDNS-JS -->
+
+</body>
+</html>
